@@ -27,6 +27,9 @@ public class LoaderRunnable implements Runnable{
                 System.out.println(e.getMessage());
             }
         }
+        if (!Thread.currentThread().isInterrupted()){
+            Thread.currentThread().interrupt();
+        }
 
     }
 }

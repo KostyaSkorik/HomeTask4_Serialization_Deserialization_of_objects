@@ -29,6 +29,7 @@ public class Main {
             LoaderRunnable lr = new LoaderRunnable(path);
             Thread th = new Thread(lr);
             th.start();
+            th.interrupt();
 
         }
 
